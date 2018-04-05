@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="pyramid-slide.css">
+  </head>
+  <body>
+    <h1 id="header">Pyramid Slide</h1>
+    <div id="workarea">
+      <div id="toolbar">
+        <div class="toolcontrol">
+          Brick Symbol:
+          <select id="brick">
+            <option value="#">#</option>
+            <option value="@">@</option>
+            <option value="X">X</option>
+            <option value="$">$</option>
+          </select>
+        </div>
+
+        <div class="toolcontrol">
+          How high? 
+          <input type="range" id="heightInput" value="8" min="1" max="20" step="1"></input>
+          <span id="heightOutput">1</span>
+        </div>
+      </div>
+
+      <div id="container">
+        <!-- Our pyramid will go inside here -->
+        <div id="construction">
+          <p>Uh oh! the pyramid is still under construction.</p>
+          <p>Check back again soon... our developers are hard at wrk as we speak!</p>
+        </div>
+      </div>
+
+    </div>
+    <script src="printPyramid.js"></script>
+    <script src="setup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+  body {
+    font-family: "Courier New", monospace;
+  }
+
+  #container {
+    text-align: center;
+    margin:40px;
+  }
+
+  .toolcontrol{
+    display: inline-block;
+    margin-right:50px;
+  }
+
+  #toolbar{
+    background: #d2d2d2;
+    height:40px;
+    text-align: center;
+    padding:10px;
+  }
+
+  #heightOutput{
+    font-weight: bold;
+  }
+
+  select {
+     font-weight: bold;
+  }
+
+  #header{
+      background: #b36093;
+      text-align: center;
+      color:white;
+      height:50px
+      line-height:50px;
+      padding:20px;
+  }
+
+  .block {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    font-size: 25px;
+  }
+
+  #workarea{
+    border: 2px solid  #b36093;
+    background:#f1f1f1;
+    padding:1px;
+    margin-right:40px;
+    margin-left:40px;
+    margin-top:20px;
+  }
