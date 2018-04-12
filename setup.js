@@ -1,6 +1,6 @@
-let heightInput = $("#heightInput");
-let brick = $("#brick");
-let container = $("#container");
+const heightInput = $("#heightInput");
+const brick = $("#brick");
+const container = $("#container");
 
 function buildPyramid()
 {

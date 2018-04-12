@@ -9,7 +9,7 @@ function printPyramid(container, height, char) {
 
     for (var i = 1; i <= height; i++) {
         container.append(`<div id="r${i}" class="rowblock"/>`);
-        let divRow = $(`#r${i}`);
+        const divRow = $(`#r${i}`);
         drawRowPart(height - i, divRow, "block", "");
         drawRowPart(i + 1, divRow, "block", char);
     }
