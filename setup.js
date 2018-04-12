@@ -1,18 +1,14 @@
-var heightInput = document.getElementById("heightInput");
-var brick = document.getElementById("brick");
+const heightInput = $("#heightInput");
+const brick = $("#brick");
+const container = $("#container");
 
 function buildPyramid()
 {
-  var heightOutput = document.getElementById("heightOutput");
-  heightOutput.innerHTML = heightInput.value; 
-
-  var pyramid = document.getElementById("container");
-  while (pyramid.firstChild)
-    pyramid.removeChild(pyramid.firstChild);
-
-  printPyramid("div#container", heightInput.value, brick.value); 
+  container.empty();
+  $("#heightOutput").text(heightInput.val());
+  printPyramid(container, heightInput.val(), brick.val()); 
 }
 
-heightInput.addEventListener("mousemove", buildPyramid);
-document.addEventListener("mouseup", buildPyramid);
-window.addEventListener("load", buildPyramid);
+heightInput.change(buildPyramid);
+brick.change(buildPyramid);
+$(document).ready(buildPyramid);
